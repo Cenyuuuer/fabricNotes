@@ -1,0 +1,11 @@
+1.peer0.org1创建mychannel
+2.peer0.org1  peer1.org1  peer0.org2  peer1.org2 加入mychannel
+3.设置peer0.org1  peer0.org2为org1和org2的锚节点
+4.peer0.org1  peer0.org2安装chaincode
+5.peer0.org2实例化chaincode   初始化{a=100,b=200} 背书策略：org1 org2任一peer即可
+6.在peer0.org1中查询a的数值  a=100
+7.peer0.org1  invoke transaction  a转给b 10     
+8.peer1.org2  安装chaincode
+9.peer1.org2 查询a的值 a=90
+
+================all good ================= 
